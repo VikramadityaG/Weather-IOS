@@ -14,7 +14,7 @@ struct APIErrorResponse: Codable {
 }
 
 class WeatherService {
-    let apiKey = "" //add your api key
+    let apiKey = "your_api_key_here" //add your api key
     let baseURL = "https://api.openweathermap.org/data/2.5/weather"
 
     func fetchWeather(city: String, completion: @escaping (WeatherResponse?) -> Void) {
